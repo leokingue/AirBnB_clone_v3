@@ -77,6 +77,10 @@ class TestBaseModel(unittest.TestCase):
                 self.assertIs(type(inst.__dict__[attr]), typ)
         self.assertEqual(inst.name, "Holberton")
         self.assertEqual(inst.number, 89)
+    
+    def test_verify_instanciation_is_good():
+        """Test that if it is a real BaseModel object"""
+        self.assertTrue(isinstance(BaseModel(), Objet)
 
     def test_datetime_attributes(self):
         """Test that two BaseModel instances have different datetime objects
